@@ -9,25 +9,12 @@ var rotate = function (nums, k) {
     {
         return nums
     }
-    else if(k>nums.length)
-    {
+ 
        reverse(nums, 0, nums.length - 1);
 
        reverse(nums,0,k%nums.length-1)
 
-       return reverse(nums,k%nums.length,nums.length-1)
-
-    }
-    else{
-
-    reverse(nums, 0, nums.length - 1);
-
-    reverse(nums, 0, k - 1);
-
-    reverse(nums,k,nums.length-1);
-    }
-
-
+       reverse(nums,k%nums.length,nums.length-1)
 
 };
 
