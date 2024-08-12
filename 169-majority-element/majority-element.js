@@ -7,7 +7,7 @@ var majorityElement = function(nums) {
     majority = nums[0];
     count = 1;
 
-    for (let i = 0; i<nums.length;i++)
+    for (let i = 1; i<nums.length;i++)
     {
        if(nums[i]==majority)
        {
