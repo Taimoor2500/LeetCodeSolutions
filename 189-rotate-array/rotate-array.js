@@ -5,10 +5,7 @@
  */
 var rotate = function (nums, k) {
 
-    if(nums.length ==1)
-    {
-        return nums
-    }
+  
  
        reverse(nums, 0, nums.length - 1);
 
